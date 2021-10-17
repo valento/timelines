@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "id": 1001,
+    "name": "Alexander",
+    "family": "Macedonian",
+    "greek": "Αλέξανδρος",
+    "nick": "Alexander The Greate",
+    "gender": "male",
+    "geo": {
+      "national": "greek",
+      "city": "Pella",
+      "region": "Macedon",
+      "location": {
+        "lat": "",
+        "lan": ""
+      }
+    },
+    "mother": {
+      "id": 1101
+    },
+    "father": {
+      "id": 1201
+    },
+    "stepfather": {
+      "id": 1202
+    }
+  },
+  "events": [
+    {
+      "id": 1001,
+      "type": 1,
+      "rank": 1,
+      "date": "356-7-21"
+    },
+    {
+      "id": 1004,
+      "type": 2,
+      "rank": 1,
+      "date": "332-7-21"
+    },
+    {
+      "id": 1002,
+      "type": 4,
+      "rank": 2,
+      "date": "334-15-1"
+    },
+    {
+      "id": 1003,
+      "type": 4,
+      "rank": 1,
+      "date": "333-9-3"
+    }
+  ]
+}

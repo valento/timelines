@@ -1,0 +1,4 @@
+export const USER_AUTHORIZED = 'USER_AUTHORIZED'
+export const USER_SIGNEDUP = 'USER_SIGNEDUP'
+
+export const NEW_TIMELINE = 'NEW_TIMELINE'

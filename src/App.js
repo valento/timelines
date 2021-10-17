@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import { Button } from 'semantic-ui-react'
 
-function App() {
+import Top from './components/pages/top.js'
+import Home from './components/pages/home.js'
+import TimelinePage from './components/pages/timelines.js'
+
+const App = ({ location,standalone=true }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {standalone && <Route location={location} path='/' component={Top} />}
+      <Route location={location} path='/' exact component={Home} />
+      <Route location={location} path='/timeline' exact component={Home} />
+      <Route location={location} path='/timeline/:id' exact component={TimelinePage} />
     </div>
-  );
+  )
 }
 
-export default App;
+App.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  }).isRequired
+}
+
+export default App
